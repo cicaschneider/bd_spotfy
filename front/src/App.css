@@ -1,0 +1,136 @@
+/* Reset e fonte */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header */
+.App header {
+  background-color: #1db954;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Formulário */
+.form-section {
+  padding: 20px;
+  background-color: #181818;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+input, select, .btn-submit {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  outline: none;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #1db954;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(29, 185, 84, 0.5);
+}
+
+.btn-submit:hover {
+  background-color: #17a44d;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(29, 185, 84, 0.7);
+}
+
+.btn-submit:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Resultados */
+.results-section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* maior espaçamento lateral */
+  justify-content: center;
+  overflow: hidden; /* remove scrolls */
+  padding: 10px;
+}
+
+.case-card, .song-card {
+  background: linear-gradient(145deg, #282828, #1db95415);
+  border-radius: 10px;
+  padding: 15px;
+  flex: 0 1 300px; /* largura fixa e responsiva */
+  min-width: 250px;
+  box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4);
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.case-card:hover, .song-card:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+  box-shadow: 0 6px 20px rgba(29, 185, 84, 0.6);
+}
+
+.case-card.churn {
+  border-left: 5px solid #ff4d4d;
+}
+
+.case-card.active {
+  border-left: 5px solid #1db954;
+}
+
+.song-card h3 {
+  margin: 0 0 5px 0;
+}
+
+.song-card p {
+  margin: 3px 0;
+  font-size: 0.9em;
+}
