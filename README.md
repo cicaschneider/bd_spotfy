@@ -16,7 +16,7 @@ O sistema funciona em duas partes:
 
 ## 📦 Estrutura de arquivos
 ```
-bd_spotfy/
+bd_spotify/
 backend/
  ├─ _pycache_/
  ├─ app
