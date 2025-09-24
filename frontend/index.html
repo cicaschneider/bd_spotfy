@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB - Recomendação de Canções Brasileiras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <i class="fas fa-music"></i>
+                    Music Match
+                </h1>
+                <p class="subtitle">Sistema de Raciocínio Baseado em Casos para Recomendação Musical</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="Digite o nome da música que você gosta..."
+                            class="search-input"
+                        >
+                        <button id="searchButton" class="search-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="search-hint">
+                        <i class="fas fa-lightbulb"></i>
+                        Experimente buscar por "Flowers", "Houdini" ou "Million Dollar Baby"
+                    </p>
+                </div>
+            </section>
+
+            <section class="results-section" id="resultsSection">
+                <div class="results-header">
+                    <h2 class="results-title">Recomendações para você</h2>
+                    <div class="results-count" id="resultsCount"></div>
+                </div>
+                <div class="cards-container" id="cardsContainer">
+                    <!-- Cards serão inseridos aqui dinamicamente -->
+                </div>
+            </section>
+
+            <section class="loading-section" id="loadingSection">
+                <div class="loading-spinner">
+                    <i class="fas fa-compact-disc fa-spin"></i>
+                </div>
+                <p class="loading-text">Analisando suas preferências musicais...</p>
+            </section>
+
+            <section class="empty-state" id="emptyState">
+                <div class="empty-content">
+                    <i class="fas fa-music-note"></i>
+                    <h3>Nenhuma recomendação encontrada</h3>
+                    <p>Tente buscar por uma música diferente ou verifique a ortografia.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy;  Music Match - Sistema de Recomendação Musical</p>
+                <p class="footer-tech">Desenvolvido com carinho <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
