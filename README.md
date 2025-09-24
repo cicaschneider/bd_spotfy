@@ -2,7 +2,7 @@
 
 ## ✨ Sobre o Projeto
 O Music Match é um projeto de recomendação de músicas baseado em casos (RBC), desenvolvido para a disciplina de Inteligência Artificial. A ideia é criar um sistema que sugere novas faixas para usuários com base em suas preferências musicais, usando uma abordagem onde a similaridade entre novos casos (usuários com preferências específicas) é comparada a casos já existentes (histórico de usuários e playlists).
-O sistema funciona em duas partes:
+O sistema funciona em duas partes:   
   - Backend (Python): Responsável por processar os dados do Spotify e aplicar o algoritmo de RBC para gerar as recomendações.
   - Frontend (HTML, CSS, JS): Interface de usuário onde o usuário interage para receber as sugestões de músicas.
  
